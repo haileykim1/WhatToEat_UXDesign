@@ -7,13 +7,14 @@ import android.view.MenuItem
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
-import com.sy.whattoeat.databinding.ActivityMainBinding
+import com.sy.whattoeat.databinding.ActivityEatOutBinding
 
-class MainActivity : AppCompatActivity() {
-
-    val binding by lazy {ActivityMainBinding.inflate(layoutInflater)}
+class EatOutActivity : AppCompatActivity() {
+    val binding by lazy { ActivityEatOutBinding.inflate(layoutInflater)}
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
@@ -27,36 +28,7 @@ class MainActivity : AppCompatActivity() {
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
             startActivity(intent)
         }
-
-        init()
-
     }
-    private fun init(){
-
-        binding.eatoutButton.setOnClickListener {
-            val intent = Intent(this, EatOutActivity::class.java)
-            startActivity(intent)
-        }
-        binding.eathomeButton.setOnClickListener {
-            val intent = Intent(this, EatHomeActivity::class.java)
-            startActivity(intent)
-        }
-        binding.dietbydayButton.setOnClickListener {
-            val intent = Intent(this, DietActivity::class.java)
-            startActivity(intent)
-        }
-        binding.settingButton.setOnClickListener {
-            val intent = Intent(this, SettingActivity::class.java)
-            startActivity(intent)
-        }
-
-
-
-
-    }
-
-
-
 
 
 }

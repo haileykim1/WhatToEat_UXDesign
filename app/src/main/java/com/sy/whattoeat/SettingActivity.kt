@@ -27,6 +27,16 @@ class SettingActivity : AppCompatActivity() {
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
             startActivity(intent)
         }
+
+        init()
+
+    }
+
+    private fun init(){
+        binding.button10.setOnClickListener {
+            val intent = Intent(this, AddFoodActivity::class.java)
+            startActivity(intent)
+        }
     }
 
 

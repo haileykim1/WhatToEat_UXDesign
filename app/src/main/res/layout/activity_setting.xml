@@ -6,13 +6,56 @@
     android:layout_height="match_parent"
     tools:context=".SettingActivity">
 
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="244dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="115dp"
+        android:text="음식 추가"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button9" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="244dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="84dp"
+        android:text="앱 정보"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button8" />
+
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="346dp"
-        android:layout_marginEnd="174dp"
+        android:layout_marginStart="179dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="192dp"
         android:text="설정"
+        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="244dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="62dp"
+        android:text="앱 버전"
+        app:layout_constraintBottom_toTopOf="@+id/button9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 </androidx.constraintlayout.widget.ConstraintLayout>

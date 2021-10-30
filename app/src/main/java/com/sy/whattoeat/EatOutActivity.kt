@@ -28,6 +28,25 @@ class EatOutActivity : AppCompatActivity() {
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
             startActivity(intent)
         }
+
+        init()
+    }
+
+    private fun init(){
+        binding.button.setOnClickListener {
+            val intent = Intent(this, EatOutFoodsActivity::class.java)
+            startActivity(intent)
+        }
+        binding.button2.setOnClickListener {
+            val intent = Intent(this, EatOutFoodsActivity::class.java)
+            startActivity(intent)
+        }
+        binding.button3.setOnClickListener {
+            val intent = Intent(this, EatOutFoodsActivity::class.java)
+            startActivity(intent)
+        }
+
+
     }
 
 

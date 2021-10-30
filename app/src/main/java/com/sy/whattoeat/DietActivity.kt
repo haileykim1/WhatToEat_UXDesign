@@ -35,7 +35,10 @@ class DietActivity : AppCompatActivity() {
     }
 
     private fun init(){
-
+        binding.button7.setOnClickListener {
+            val intent = Intent(this, StatisticActivity::class.java)
+            startActivity(intent)
+        }
     }
 
 }

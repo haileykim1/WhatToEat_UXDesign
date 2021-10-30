@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WhatToEat">
-        <activity android:name=".SettingActivity"></activity>
+        <activity android:name=".AddFoodActivity"></activity>
+        <activity android:name=".EatOutFoodsActivity" />
+        <activity android:name=".StatisticActivity" />
+        <activity android:name=".SettingActivity" />
         <activity android:name=".DietActivity" />
         <activity android:name=".EatHomeActivity" />
         <activity android:name=".EatOutActivity" />

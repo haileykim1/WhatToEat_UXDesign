@@ -3,18 +3,16 @@ package com.sy.whattoeat
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.MenuItem
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
-import com.sy.whattoeat.databinding.ActivityEatHomeBinding
+import com.sy.whattoeat.databinding.ActivityStatisticBinding
 
-class EatHomeActivity : AppCompatActivity() {
-    val binding by lazy{ ActivityEatHomeBinding.inflate(layoutInflater)}
+class StatisticActivity : AppCompatActivity() {
+
+    val binding by lazy {ActivityStatisticBinding.inflate(layoutInflater)}
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
-
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
@@ -28,25 +26,5 @@ class EatHomeActivity : AppCompatActivity() {
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
             startActivity(intent)
         }
-
-        init()
     }
-
-    private fun init(){
-        binding.button4.setOnClickListener {
-            val intent = Intent(this, EatOutFoodsActivity::class.java)
-            startActivity(intent)
-        }
-        binding.button5.setOnClickListener {
-            val intent = Intent(this, EatOutFoodsActivity::class.java)
-            startActivity(intent)
-        }
-        binding.button6.setOnClickListener {
-            val intent = Intent(this, EatOutFoodsActivity::class.java)
-            startActivity(intent)
-        }
-
-    }
-
-
 }
